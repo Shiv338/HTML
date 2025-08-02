@@ -1,0 +1,43 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {
+    background-color: orangered;
+    height: 30px;
+}
+
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: brown; /* white */
+    padding-top: 10%;
+}
+
+a:hover {
+    background-color: brown;
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {
+    background-color: red;
+    height: 30px;
+}
+
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color:white; /* white */
+    padding-top: 10%;
+}
+
+a:hover {
+    background-color: white;
+}
+img{
+    margin-left: 200px;
+}
