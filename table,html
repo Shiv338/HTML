@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;   /* Center horizontally */
+      align-items: center;       /* Center vertically */
+      height: 100vh;             /* Full viewport height */
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    table {
+      border-collapse: collapse;
+      width: 800px;              /* Fixed width (not full screen) */
+    }
+    td {
+      border: 1px solid black;
+      height: 60px;              /* Row height */
+    }
+  </style>
+</head>
+<body>
+<table>
+  <!-- Row 1 -->
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Row 2 -->
+  <tr>
+    <td colspan="3"></td>  <!-- Merged 3 columns -->
+    <td colspan="2"></td>  <!-- Merged 2 columns -->
+    <td></td>
+    <td colspan="2"></td>  <!-- Merged last 2 columns -->
+  </tr>
+
+  <!-- Row 3 -->
+  <tr>
+    <td colspan="2"></td>  <!-- Merged 2 columns -->
+    <td></td>
+    <td></td>
+    <td colspan="2"></td>  <!-- Merged 2 columns -->
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Row 4 -->
+  <tr>
+    <td></td>
+    <td></td>
+    <td colspan="3"></td>  <!-- Merged 3 columns -->
+    <td rowspan="2"></td>  <!-- Vertical merge with Row 5 -->
+    <td colspan="2"></td>  <!-- Merged last 2 columns -->
+  </tr>
+
+  <!-- Row 5 -->
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <!-- Skipped cell because of rowspan above -->
+    <td colspan="2"></td>  <!-- Merged last 2 columns -->
+  </tr>
+</table>
+
+</body>
+</html>
